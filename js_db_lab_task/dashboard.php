@@ -1,3 +1,12 @@
+<?php 
+	require_once 'model/db_connect.php';
+	
+		$query="select * from users";
+		$result=get($query);
+		//echo $result[0]["name"];
+?>
+
+
 <html>
 	<title></title>
 	<head></head>
@@ -11,6 +20,19 @@
 					<th>Email</th>
 					<th>Phone</th>
 				</tr>
+				<?php 
+					foreach($result as $p)
+					{
+						
+						echo "<tr>";
+							echo "<td>".$p["name"]."</td>";
+							echo "<td>".$p["userName"]."</td>";
+							echo "<td>".$p["email"]."</td>";
+							echo "<td>".$p["phone"]."</td>";
+							
+						echo "</tr>";
+					}
+				?>
 			</table>
 		</form>
 	</body>
