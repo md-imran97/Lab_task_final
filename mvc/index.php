@@ -8,7 +8,7 @@
 		//echo "yo";
 		$userName=htmlspecialchars($_POST["userName"]);
 		$password=htmlspecialchars($_POST["password"]);
-		$password=md5($password);
+		//$password=md5($password);
 		$query="select * from users where userName='$userName' and password='$password'";
 		$result=get($query);
 		//echo $result[0]["userName"];

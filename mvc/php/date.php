@@ -4,7 +4,7 @@
 		if($i == 0)
 		{
 
-			echo "<option value='' disabled selected>Date</option>";
+			echo "<option value='0' disabled selected>Date</option>";
 		}
 		else
 		{

@@ -4,7 +4,7 @@
 		if($i == 1980)
 		{
 
-			echo "<option value='$i' disabled selected>Year</option>";
+			echo "<option value='0' disabled selected>Year</option>";
 		}
 		else
 		{

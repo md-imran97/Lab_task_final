@@ -7,7 +7,7 @@
 		if($i == 0)
 			{
 
-				echo "<option value='' disabled selected>$deptArr[$i]</option>";
+				echo "<option value='0' disabled selected>$deptArr[$i]</option>";
 			}
 			else
 			{

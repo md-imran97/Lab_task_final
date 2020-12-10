@@ -1,10 +1,6 @@
 <?php 
-	if(isset($_POST["addStudent"]))
-	{
-		
-		
-		echo "Register successfully";
-	}
+	require_once 'controller/controllerStudent.php';
+	
 
 ?>
 <html>
@@ -12,6 +8,8 @@
 	<head></head>
 	<body>
 		<h1>Add Student</h1>
+		<br>
+		<h3> <a href="dashboard.php">Go to Dashboard</a></h3>
 		<form method="post" onsubmit="return validate()" action="">
 			<table>
 				<tr>
@@ -20,12 +18,12 @@
 				</tr>
 				
 				<tr>
-						<td align="right">Date of Birth </td>
+						<td align="">Date of Birth </td>
 						<td>
 							<select name="month" id="month" ><?php include_once "php/month.php"; ?></select>
 							<select name="date" id="date" ><?php include_once "php/date.php"; ?></select>
 							<select name="year" id="year" ><?php include_once "php/year.php"; ?></select>
-							<span id="err_dob"></span></
+							<span id="err_dob"></span>
 						</td>
 					</tr>
 				
@@ -38,7 +36,7 @@
 					<td><input type="text" id="cgpa" name="cgpa"><span id="err_cgpa"></span></td>
 				</tr>
 				<tr>
-						<td align="right">Department</td>
+						<td align="">Department</td>
 						<td>
 							<select name="department" id="department"><?php include_once "php/department.php"; ?></select>
 							<span id="err_department"></span>
